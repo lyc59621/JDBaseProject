@@ -1,0 +1,117 @@
+//
+//  PrefixHeader.pch
+//  JDBaseProject
+//
+//  Created by 姜锦龙 on 2019/8/10.
+//  Copyright © 2019 姜锦龙. All rights reserved.
+//
+#pragma clang diagnostic ignored "-Wimplicit-retain-self" //
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+//引入Masonry两个宏 便于写布局代码
+#define MAS_SHORTHAND
+#define MAS_SHORTHAND_GLOBALS
+
+
+
+//tools
+//#import "DDLog.h"
+//#import "CocoaLumberjack.h"
+//#import <CocoaLumberjack/CocoaLumberjack.h>
+#import "MJRefresh.h"
+
+
+
+//Macros
+#import "JDMacros.h"
+#import "JDURLMacros.h"
+#import "JDUserMacros.h"
+#import "JDValidMacros.h"
+#import "JDFontMacros.h"
+
+#import "JDColorMacros.h"
+#import "JDScreenMacros.h"
+#import "JDUserMacros.h"
+#import "JDThirdMacros.h"
+#import "JDEnumerateHeader.h"
+#import "JDTargetConfigMacros.h"
+#import "JDNotificationContants.h"
+
+
+//Module Router
+#import "CTMediator.h"
+
+
+//Net
+#import <JDNetwork.h>
+#import <AFNetworking.h>
+
+
+
+//UI
+#import <YYKit.h>
+#import <QMUIKit.h>
+#import <SUIUtils.h>
+//#import <AsyncDisplayKit/AsyncDisplayKit.h>
+
+//UITableView+FDTemplateLayoutCell
+#import "UITableView+FDTemplateLayoutCell.h"
+#import "UITableView+FDTemplateLayoutCellDebug.h"
+
+
+
+//Layout UI
+#import <Masonry/Masonry.h>
+//#import "MBProgressHUD.h"
+//#import <MBProgressHUD+JDragon.h>
+
+
+//Animation
+//#import <POP.h>
+
+
+
+//Signal
+//#import <ReactiveObjC.h>
+#import "ReactiveObjC.h"
+#import <SUIMVVMKit.h>
+
+
+
+//Base
+#import "RTRootNavigationController.h"
+#import "JDRootTabbarController.h"
+#import "JDBaseNavigationController.h"
+#import "JDBaseViewController.h"
+#import "JDBaseObject.h"
+
+
+
+//User
+#import "JDUserManager.h"
+#import "JDUserObject.h"
+
+
+
+
+
+//JD
+#import "JDragonTableManager.h"
+#import "UITableView+JDragonTableManager.h"
+
+
+//Category
+//#import "UIButton+Style.h"
+//#import "UIView+JDShade.h"
+
+
+
+//模块化
+#import "JDBaseModuleHeader.h"
+
+#endif /* PrefixHeader_pch */
+

@@ -1,0 +1,68 @@
+# Uncomment the next line to define a global platform for your project
+platform :ios, '9.0'
+
+target 'JDBaseProject' do
+  # Comment the next line if you don't want to use dynamic frameworks
+  use_frameworks!
+
+  # Pods for JDBaseProject
+
+
+  
+  # HYBHelperKit     备选
+  #----------- UI -------------
+  #pod 'pop'
+  #pod 'Texture', '~> 2.4'
+  #pod 'ZFPlayer', '~> 3.0'  //腾讯player 已经引入
+  #pod 'LazyScroll'
+  pod 'CYLTabBarController'
+  pod 'FXBlurView', '~> 1.6.4'
+  pod 'ChameleonFramework', '~> 2.1.0' #颜色
+  
+  #----------- Net --------------
+  #pod 'JDragonNetWork', '~> 0.0.2'
+  
+  #----------- DB ---------------
+  #pod 'FMDB' //worning
+  #pod 'BGFMDB', '~> 2.0.9'
+  #pod 'GVUserDefaults', '~> 1.0.2'
+  
+  #----------- Core --------------
+  #pod 'CTMediator'
+  
+  
+  #----------- Tools --------------
+  pod 'FLEX', '~> 2.0', :configurations => ['Debug']   #调试
+  pod 'Bugly'
+  #pod 'BuglyHotfix'  # 热更新
+  pod 'MJRefresh', '~> 3.2.0' #refresh
+  pod 'XAspect'
+  #pod 'BBLocationManager', '~> 1.1'
+  #pod 'IQKeyboardManager'   #键盘管理
+  #pod 'RTInteractivePush' #RTRootNavigationController
+
+  
+  #----------- MOB SDK--------------
+  pod 'mob_analysdk'
+  pod 'mob_pushsdk' #推送
+  #pod 'mob_sharesdk'
+  #pod 'mob_sharesdk/ShareSDKPlatforms/QQ'
+  #pod 'mob_sharesdk/ShareSDKPlatforms/SinaWeibo'
+  
+  #----------- UM SDK--------------
+  pod 'UMCAnalytics'
+  
+  
+  pod 'JDBaseModule', :path => "../../JDBaseModule"
+
+  target 'JDBaseProjectTests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+  target 'JDBaseProjectUITests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+end
