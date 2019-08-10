@@ -3,7 +3,7 @@ platform :ios, '9.0'
 
 target 'JDBaseProject' do
   # Comment the next line if you don't want to use dynamic frameworks
-  use_frameworks!
+  #use_frameworks!
 
   # Pods for JDBaseProject
 
@@ -43,17 +43,18 @@ target 'JDBaseProject' do
 
   
   #----------- MOB SDK--------------
-  pod 'mob_analysdk'
-  pod 'mob_pushsdk' #推送
-  #pod 'mob_sharesdk'
-  #pod 'mob_sharesdk/ShareSDKPlatforms/QQ'
-  #pod 'mob_sharesdk/ShareSDKPlatforms/SinaWeibo'
-  
+#  pod 'mob_analysdk'
+#  pod 'mob_pushsdk' #推送
+#  pod 'mob_sharesdk'
+#  pod 'mob_sharesdk/ShareSDKPlatforms/QQ'
+#  pod 'mob_sharesdk/ShareSDKPlatforms/SinaWeibo'
+
   #----------- UM SDK--------------
   pod 'UMCAnalytics'
   
   
   pod 'JDBaseModule', :path => "../../JDBaseModule"
+  pod 'JDToolsModule', :path => "../../JDToolsModule"
 
   target 'JDBaseProjectTests' do
     inherit! :search_paths

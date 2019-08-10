@@ -15,19 +15,7 @@
 #if __has_include("JDToolsModuleHeader.h")
 #import "JDToolsModuleHeader.h"
 #endif
-
 #import <Bugly/Bugly.h>
-
-//////   share
-//#import <ShareSDK/ShareSDK.h>
-//#import <ShareSDK/ShareSDK+Base.h>
-//#import <ShareSDKConnector/ShareSDKConnector.h>
-//#import "WeiboSDK.h"
-//#import "WXApi.h"
-//#import "WXApiObject.h"
-//#import <TencentOpenAPI/TencentOAuth.h>
-//#import <TencentOpenAPI/QQApiInterface.h>
-
 #import "JDAppDelegate+ADService.h"
 
 
